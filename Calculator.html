@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	</title>
+	<link rel="stylesheet" href="..\web page\Bootstrap\css\bootstrap.css"/>
+	<link rel="stylesheet" href="..\web page\Bootstrap\css\mdb.css"/>
+	<link rel="stylesheet" href="..\web page\Bootstrap\css\styles1.css"/>
+<link rel="stylesheet" href="D:\HTML practice\fontawesome-free-6.4.2-web\fontawesome-free-6.4.2-web\css\all.css"/>
+</head>
+<body>
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-md-8 m-auto">
+				<div class="card">
+					<div class="card-header bg-secondary text-white text-center">
+						<h3>Calculator</h3>
+					</div>
+					<div class="card-body">
+					<form name="my_cal">
+						<div class="input-group mb-2">
+							<input type="text" name="first" placeholder="Enter First Number" class="form-control" id="usn">
+						</div>
+						<div class="input-group mb-2">
+							<input type="text" name="second" placeholder="Enter second number" class="form-control" id="pw">
+						</div>
+						<br>
+						<div><input type="button" value="Add" onclick="javascript:addition();">
+							 <input type="button" value="SUB" onclick="javascript:subtraction();">
+							  <input type="button" value="MUL" onclick="javascript:multiply();">
+							  <input type="button" value="DIV" onclick="javascript:division();">
+							</div>
+							<br>
+						</div>
+					<div class="card-footer bg-primary">
+						Get Result: <input type="text" name="total">					
+				</div>
+			</form>
+			</div>
+		</div
+	</div>
+	</div>
+	<script type="text/javascript">
+    function multiply(){
+      a=Number(document.my_cal.first.value);
+      b=Number(document.my_cal.second.value);
+      c=a*b;
+      document.my_cal.total.value=c;
+    }
+
+    function addition(){
+      a=Number(document.my_cal.first.value);
+      b=Number(document.my_cal.second.value);
+      c=a+b;
+      document.my_cal.total.value=c;
+    }
+    function subtraction(){
+      a=Number(document.my_cal.first.value);
+      b=Number(document.my_cal.second.value);
+      c=a-b;
+      document.my_cal.total.value=c;
+    }
+    function division(){
+      a=Number(document.my_cal.first.value);
+      b=Number(document.my_cal.second.value);
+      c=a/b;
+      document.my_cal.total.value=c;
+    }   
+  </script>
+</body>
+</html>
