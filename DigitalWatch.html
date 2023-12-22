@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Digital watch</title>
+	<link rel="stylesheet" href="../E2Bootsrap/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="../E2Bootsrap/bootstrap/css/mdb.css">
+<link rel="stylesheet" href = "../Fontawesome/css/all.css">
+</head>
+<body>
+<section class="container mt-4"><head>
+	<div class= "row">
+		<div class="col-md-5 m-auto">
+			<div class="card">
+				<div class="card-body text-center">
+					<h2>Indian Digital Watch</h2>
+					<p>Asia/kolkata</p>
+					<h5 id ="display-time">Time</h5>
+					<h3 id="display-date">Date</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<script>
+	let timeTag = document.getElementById('display-time');
+	let dateTag = documnet.getElementById('diplay-date');
+	function timer()
+	{
+		let d1 = new Date();
+		let currentTime=d1.toLocaleTimeString();
+		let currentDate=d1.toLocaleDateString();
+		timeTag.innerText=currentTime;
+		dateTag.innerText=currentDate;
+	}
+	setInterval(timer,1000);
+	</script>
+</body>
+</html>
